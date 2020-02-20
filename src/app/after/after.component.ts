@@ -6,7 +6,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./after.component.scss"]
 })
 export class AfterComponent implements OnInit {
-  constructor() {}
+  constructor() {
+    console.log('### AfterComponent constructor');
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('### AfterComponent ngOnInit');
+  }
 }

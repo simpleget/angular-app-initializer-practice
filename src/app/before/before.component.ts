@@ -6,7 +6,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./before.component.scss"]
 })
 export class BeforeComponent implements OnInit {
-  constructor() {}
+  constructor() {
+    console.log("### BeforeComponent constructor");
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log("### BeforeComponent ngOnInit");
+  }
 }

@@ -1,0 +1,9 @@
+{
+  "configuration": {
+    "title": "Config Title",
+    "settings": {
+      "mode": "dev"
+    }
+  },
+  "versions": "v1.27"
+}

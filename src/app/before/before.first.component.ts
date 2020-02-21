@@ -5,12 +5,12 @@ import { Component, OnInit } from "@angular/core";
   templateUrl: "./before.component.html",
   styleUrls: ["./before.component.scss"]
 })
-export class BeforeComponent implements OnInit {
+export class BeforeFirstComponent implements OnInit {
   constructor() {
-    console.log("### BeforeComponent constructor");
+    console.log("### BeforeFirstComponent constructor");
   }
 
   ngOnInit() {
-    console.log("### BeforeComponent ngOnInit");
+    console.log("### BeforeFirstComponent ngOnInit");
   }
 }

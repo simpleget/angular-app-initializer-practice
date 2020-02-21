@@ -6,7 +6,8 @@ import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { BeforeParentComponent } from "./before/before.parent.component";
 import { BeforeChildComponent } from "./before/before.child.component";
-import { AfterComponent } from "./after/after.component";
+import { AfterParentComponent } from "./after/after.parent.component";
+import { AfterChildComponent } from "./after/after.child.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule],
@@ -15,7 +16,8 @@ import { AfterComponent } from "./after/after.component";
     HelloComponent,
     BeforeParentComponent,
     BeforeChildComponent,
-    AfterComponent
+    AfterParentComponent,
+    AfterChildComponent
   ],
   bootstrap: [AppComponent]
 })

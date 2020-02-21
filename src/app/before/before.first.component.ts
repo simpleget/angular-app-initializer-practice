@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-before",
-  templateUrl: "./before.component.html",
+  selector: "app-before-first",
+  templateUrl: "./before.first.component.html",
   styleUrls: ["./before.component.scss"]
 })
 export class BeforeFirstComponent implements OnInit {

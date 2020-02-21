@@ -4,7 +4,7 @@ import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
-import { BeforeFirstComponent } from "./before/before.first.component";
+import { BeforeParentComponent } from "./before/before.parent.component";
 import { BeforeSecondComponent } from "./before/before.second.component";
 import { AfterComponent } from "./after/after.component";
 
@@ -13,7 +13,7 @@ import { AfterComponent } from "./after/after.component";
   declarations: [
     AppComponent,
     HelloComponent,
-    BeforeFirstComponent,
+    BeforeParentComponent,
     BeforeSecondComponent,
     AfterComponent
   ],

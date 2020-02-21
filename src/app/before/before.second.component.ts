@@ -3,8 +3,7 @@ import { BeforeService } from "./before.service";
 
 @Component({
   selector: "app-before-second",
-  templateUrl: "./before.second.component.html",
-  styleUrls: ["./before.component.scss"]
+  templateUrl: "./before.second.component.html"
 })
 export class BeforeSecondComponent implements OnInit {
   constructor(private beforeService: BeforeService) {

@@ -79,6 +79,7 @@
 ```
 但事與願違，`ParentComponent`與`ChildComponent`執行到`BeforeService.beforeServiceInit()`的時間點太相近，導致`ChildComponet`執行時，`ParentComponent`尚未執行結束，所以判斷`_local_config`還是空的，再次發出`HttpClient`的請求。
 
+    ### AppComponent constructor start.
     ### BeforeService: constructor start.
     ### BeforeParentComponent constructor
     ### BeforeChildComponent constructor

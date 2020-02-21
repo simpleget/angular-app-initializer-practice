@@ -5,9 +5,9 @@ import { HttpClient } from "@angular/common/http";
   providedIn: "root"
 })
 export class AfterService {
-  private _local_config: any = {};
+  _local_config: any = {};
   private _local_config_path = "/assets/config/GlobalConfiguration.json";
-  private _local_update: any = {};
+  _local_update: any = {};
   private _local_update_path = "/assets/config/UpdatedInfo.json";
   constructor(private http: HttpClient) {
     console.log("### AfterService: constructor start.");

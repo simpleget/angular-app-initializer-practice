@@ -14,6 +14,8 @@ export class AfterParentComponent implements OnInit {
 
   ngOnInit() {
     console.log('### AfterParentComponent ngOnInit');
-    console.log();
+    console.log('### AfterParentComponent config', this.afterService._local_config);
+    console.log('### AfterParentComponent updated', this.afterService._local_update);
+    
   }
 }

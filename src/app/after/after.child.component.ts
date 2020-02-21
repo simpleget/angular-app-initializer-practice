@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { AfterService } from './after.service';
+import { AfterService } from "./after.service";
 
 @Component({
   selector: "app-after-child",
@@ -8,9 +8,7 @@ import { AfterService } from './after.service';
   `
 })
 export class AfterChildComponent implements OnInit {
-  constructor(
-    private afterService: AfterService
-  ) {
+  constructor(private afterService: AfterService) {
     console.log("### AfterChildComponent constructor");
   }
 
@@ -19,10 +17,6 @@ export class AfterChildComponent implements OnInit {
     console.log(
       "### AfterChildComponent config",
       this.afterService._local_config
-    );
-    console.log(
-      "### AfterChildComponent updated",
-      this.afterService._local_update
     );
   }
 }

@@ -3,7 +3,9 @@ import { BeforeService } from "./before.service";
 
 @Component({
   selector: "app-before-child",
-  template: `<p>sub</p>`
+  template: `
+    <p>sub</p>
+  `
 })
 export class BeforeChildComponent implements OnInit {
   constructor(private beforeService: BeforeService) {
@@ -12,13 +14,12 @@ export class BeforeChildComponent implements OnInit {
 
   ngOnInit() {
     console.log("### BeforeChildComponent ngOnInit");
-    // Get configuration in ngOnInit
-    this.beforeService
-      .initPromise()
-      .then(
-        data => {
-          console.log('### BeforeChildComponent initPromise', data);
-        }
+
+    this.beforeService.beforeServiceInit().then(data => {
+      console.log(
+        "### BeforeChildComponent config",
+        this.beforeService._local_config
       );
+    });
   }
 }

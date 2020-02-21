@@ -5,7 +5,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { BeforeParentComponent } from "./before/before.parent.component";
-import { BeforeSecondComponent } from "./before/before.second.component";
+import { BeforeSubComponent } from "./before/before.sub.component";
 import { AfterComponent } from "./after/after.component";
 
 @NgModule({
@@ -14,7 +14,7 @@ import { AfterComponent } from "./after/after.component";
     AppComponent,
     HelloComponent,
     BeforeParentComponent,
-    BeforeSecondComponent,
+    BeforeSubComponent,
     AfterComponent
   ],
   bootstrap: [AppComponent]

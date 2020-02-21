@@ -2,22 +2,22 @@ import { Component, OnInit } from "@angular/core";
 import { BeforeService } from "./before.service";
 
 @Component({
-  selector: "app-before-second",
-  templateUrl: "./before.second.component.html"
+  selector: "app-before-sub",
+  template: `<p>sub</p>`
 })
-export class BeforeSecondComponent implements OnInit {
+export class BeforeSubComponent implements OnInit {
   constructor(private beforeService: BeforeService) {
-    console.log("### BeforeSecondComponent constructor");
+    console.log("### BeforeSubComponent constructor");
   }
 
   ngOnInit() {
-    console.log("### BeforeSecondComponent ngOnInit");
+    console.log("### BeforeSubComponent ngOnInit");
     // Get configuration in ngOnInit
     this.beforeService
       .initPromise()
       .then(
         data => {
-          console.log('### BeforeSecondComponent initPromise', data);
+          console.log('### BeforeSubComponent initPromise', data);
         }
       );
   }

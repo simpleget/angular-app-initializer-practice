@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-after-child",
-  templateUrl: `<p>child</p>`
+  template: `<p>child</p>`
 })
 export class AfterChildComponent implements OnInit {
   constructor() {

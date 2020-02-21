@@ -3,7 +3,7 @@ import { BeforeService } from "./before.service";
 
 @Component({
   selector: "app-before-parent",
-  template: `<p>parent</p><app-before-sub></app-before-sub>`
+  template: `<p>parent</p><app-before-child></app-before-child>`
   // styleUrls: ["./before.component.scss"]
 })
 export class BeforeParentComponent implements OnInit {

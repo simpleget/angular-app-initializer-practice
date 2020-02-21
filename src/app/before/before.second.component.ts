@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { BeforeService } from "./before.service";
 
 @Component({
   selector: "app-before-second",
@@ -6,11 +7,19 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./before.component.scss"]
 })
 export class BeforeSecondComponent implements OnInit {
-  constructor() {
+  constructor(private beforeService: BeforeService) {
     console.log("### BeforeSecondComponent constructor");
   }
 
   ngOnInit() {
     console.log("### BeforeSecondComponent ngOnInit");
+    // Get configuration in ngOnInit
+    this.beforeService
+      .initPromise()
+      .then(
+        data => {
+          console.log('### BeforeSecondComponent initPromise', data);
+        }
+      );
   }
 }
